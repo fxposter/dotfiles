@@ -1,0 +1,17 @@
+# ls
+alias ls="ls -GF"
+alias la="ls -a"
+alias ll="ls -lhF"
+alias lla="ll -a"
+
+# df
+alias dfh="df -H"
+alias duh="du -hs"
+
+# rails
+alias sc="script/console"
+alias ss="script/server"
+alias sg="script/generate"
+alias tlog="tail -f log/development.log"
+alias migrate='rake db:migrate && rake db:migrate RAILS_ENV=test'
+
