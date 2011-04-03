@@ -1,0 +1,34 @@
+source /usr/local/etc/bash_completion.d/git-completion.bash
+
+# Git shortcuts
+alias ga="git add"
+alias gb="git branch"
+alias gc="git checkout"
+alias gcb="git checkout -b"
+alias gd="git diff"
+alias gci="git commit"
+alias gca="git commit -a"
+alias gcam='git commit -am'
+alias gg='git log --graph --pretty=format:"%Cred%h%Creset — %s %Cgreen(%cr)%Creset" --abbrev-commit --date=relative'
+alias gull="git pull"
+alias gullr="git pull --rebase"
+alias gm="git merge --no-ff"
+alias gmt="git mergetool"
+alias gush="git push"
+alias grm="git status | grep deleted | awk '{print \$3}' | xargs git rm"
+alias gs="git status; git submodule status"
+alias gu="git up"
+alias gw="git wtf"
+alias пы="git status"
+alias пыщ="git status"
+
+alias gsa='git submodule add'
+alias gsu='git submodule update --init'
+
+# Git svn shortcuts
+alias gf='git svn fetch'
+alias gfr='git svn fetch && git svn rebase'
+alias gdc='git svn dcommit'
+alias gnc='git svn fetch && git svn rebase && git svn dcommit'
+alias gcn='git svn fetch && git svn rebase && git svn dcommit'
+

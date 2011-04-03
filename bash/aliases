@@ -14,4 +14,5 @@ alias ss="script/server"
 alias sg="script/generate"
 alias tlog="tail -f log/development.log"
 alias migrate='rake db:migrate && rake db:migrate RAILS_ENV=test'
+alias rollback='rake db:rollback && rake db:rollback RAILS_ENV=test'
 
