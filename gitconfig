@@ -5,3 +5,5 @@
 	email = fxposter@gmail.com
 [github]
 	user = fxposter
+[push]
+	default = tracking
