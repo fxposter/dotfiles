@@ -6,4 +6,4 @@
 [github]
 	user = fxposter
 [push]
-	default = tracking
+	default = upstream 
