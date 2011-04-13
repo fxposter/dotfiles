@@ -7,3 +7,5 @@
 	user = fxposter
 [push]
 	default = upstream 
+[branch]
+	autosetupmerge = true
