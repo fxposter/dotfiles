@@ -1,15 +1,17 @@
-if [ -f `brew --prefix`/Library/Contributions/brew_bash_completion.sh ]; then
-  source `brew --prefix`/Library/Contributions/brew_bash_completion.sh
+
+if command -v brew &>/dev/null; then
+  if [ -f `brew --prefix`/Library/Contributions/brew_bash_completion.sh ]; then
+    source `brew --prefix`/Library/Contributions/brew_bash_completion.sh
+  fi
+
+  if [ -f `brew --prefix`/etc/bash_completion ]; then
+    source `brew --prefix`/etc/bash_completion
+  fi
+
+  # if [ -f `brew --prefix`/etc/bash_completion.d/git-completion.bash ]; then
+  #   source `brew --prefix`/etc/bash_completion.d/git-completion.bash
+  # fi
 fi
-
-if [ -f `brew --prefix`/etc/bash_completion ]; then
-  source `brew --prefix`/etc/bash_completion
-fi
-
-# if [ -f `brew --prefix`/etc/bash_completion.d/git-completion.bash ]; then
-#   source `brew --prefix`/etc/bash_completion.d/git-completion.bash
-# fi
-
 
 # Git aliases completition
 function _git_complete_aliases {
