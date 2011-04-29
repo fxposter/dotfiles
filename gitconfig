@@ -7,3 +7,5 @@
 	user = fxposter
 [push]
 	default = upstream 
+[core]
+	excludesfile = ~/.gitignore
