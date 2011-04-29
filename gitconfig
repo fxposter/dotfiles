@@ -9,3 +9,5 @@
 	default = upstream 
 [core]
 	excludesfile = ~/.gitignore
+[branch]
+	autosetupmerge = true
