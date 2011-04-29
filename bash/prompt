@@ -1,4 +1,2 @@
-source /etc/bashrc
-
+PS1='\h:\W \u\$ '
 PS1="\u@\H: \w\[\e[0;33;49m\]\$(__git_ps1) \[\e[0;0m\]$ "
-
