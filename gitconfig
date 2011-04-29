@@ -6,7 +6,7 @@
 [github]
 	user = fxposter
 [push]
-	default = upstream 
+	default = tracking 
 [core]
 	excludesfile = ~/.gitignore
 [branch]
