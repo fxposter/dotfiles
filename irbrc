@@ -1,6 +1,6 @@
 require 'rubygems'
 
-require 'looksee/shortcuts'
+require 'looksee'
 require 'ap'
 
 begin
