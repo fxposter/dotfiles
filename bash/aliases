@@ -13,6 +13,6 @@ alias sc="rails c"
 alias ss="rails s"
 alias sg="rails g"
 alias tlog="tail -f log/development.log"
-alias migrate='rake db:migrate && rake db:migrate RAILS_ENV=test'
-alias rollback='rake db:rollback && rake db:rollback RAILS_ENV=test'
+alias migrate='bundle exec rake db:migrate && bundle exec rake db:migrate RAILS_ENV=test'
+alias rollback='bundle exec rake db:rollback && bundle exec rake db:rollback RAILS_ENV=test'
 
