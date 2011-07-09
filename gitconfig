@@ -11,3 +11,10 @@
 	excludesfile = ~/.gitignore
 [branch]
 	autosetupmerge = true
+[merge]
+	tool = diffmerge
+[mergetool "diffmerge"]
+	cmd = diffmerge.sh --merge\n--result=$MERGED $LOCAL $BASE $REMOTE
+	trustExitCode = true
+[mergetool]
+	prompt = false
