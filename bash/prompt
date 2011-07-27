@@ -1,2 +1,5 @@
 PS1='\h:\W \u\$ '
 PS1="\u \w\[\e[0;33;49m\]\$(__git_ps1) \[\e[0;0m\]$ "
+PS1="\w [\$(~/.rvm/bin/rvm-prompt)]\[\e[0;33;49m\]\$(__git_ps1) \[\e[0;0m\]$ "
+
+PROMPT_COMMAND='echo -ne "\033]0;${PWD##*/}\007"'
