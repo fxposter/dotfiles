@@ -34,3 +34,4 @@ for cmd in 'ga gb gc gcb gd gci gca gl glr gm gmt gp gull gush'; do
     || complete -o default -o nospace -F _git_complete_aliases $cmd 2>/dev/null
 done
 
+complete -o default -F _command be
