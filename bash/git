@@ -7,7 +7,7 @@ alias gd="git diff"
 alias gci="git commit"
 alias gca="git commit -a"
 alias gcam='git commit -am'
-alias gl='git log --graph --pretty=format:"%Cred%h%Creset — %s %Cgreen(%cr)%Creset" --abbrev-commit --date=relative'
+alias gl='git log --graph --pretty=format:"%Cred%h%Creset — %s %Cgreen(%Cblue%an%Creset, %Cgreen%cr)%Creset" --abbrev-commit --date=relative'
 alias gg='git grep'
 alias gull="git pull"
 alias gullr="git pull --rebase"
