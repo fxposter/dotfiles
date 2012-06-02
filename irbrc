@@ -1,7 +1,14 @@
 require 'rubygems'
 
-require 'looksee'
-require 'ap'
+begin
+  require 'looksee'
+rescue LoadError
+end
+
+begin
+  require 'ap'
+rescue LoadError
+end
 
 begin
   require 'hirb'

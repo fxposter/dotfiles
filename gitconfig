@@ -6,21 +6,18 @@
 [github]
 	user = fxposter
 [push]
-	default = tracking 
+	default = tracking
 [core]
 	excludesfile = ~/.gitignore
 [branch]
 	autosetupmerge = true
 [merge]
-	tool = diffmerge
-[mergetool "diffmerge"]
-	cmd = diffmerge.sh --merge\n--result=$MERGED $LOCAL $BASE $REMOTE
-	trustExitCode = true
+	tool = sourcetree
 [mergetool]
 	prompt = false
 [difftool "sourcetree"]
 	cmd = opendiff \"$LOCAL\" \"$REMOTE\"
-	path = 
+	path =
 [mergetool "sourcetree"]
 	cmd = /Applications/SourceTree.app/Contents/Resources/opendiff-w.sh \"$LOCAL\" \"$REMOTE\" -ancestor \"$BASE\" -merge \"$MERGED\"
 	trustExitCode = true
