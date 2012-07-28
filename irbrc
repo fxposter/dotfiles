@@ -19,6 +19,7 @@ end
 
 begin
   require 'wirble'
+  Wirble::Colorize.colors.merge!(:symbol => :purple, :symbol_prefix => :red)
   Wirble.init
   Wirble.colorize
 rescue LoadError => ex
