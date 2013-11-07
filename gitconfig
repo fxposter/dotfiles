@@ -9,9 +9,9 @@
 	default = tracking
 [core]
 	excludesfile = ~/.gitignore
-	editor = '/Applications/Sublime Text 2.app/Contents/SharedSupport/bin/subl' -w
+	editor = '/Applications/Sublime Text.app/Contents/SharedSupport/bin/subl' -w
 [branch]
-	autosetupmerge = true
+	autosetuprebase = always
 [alias]
 	lg = log --color --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' --abbrev-commit --
 	l = log --color --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' --abbrev-commit --
@@ -31,11 +31,9 @@
 	tool = Kaleidoscope
 [difftool "sourcetree"]
 	cmd = opendiff \"$LOCAL\" \"$REMOTE\"
-	path = 
+	path =
 [mergetool "sourcetree"]
 	cmd = /Applications/SourceTree.app/Contents/Resources/opendiff-w.sh \"$LOCAL\" \"$REMOTE\" -ancestor \"$BASE\" -merge \"$MERGED\"
 	trustExitCode = true
-[pull]
-	rebase = true
 [credential]
 	helper = osxkeychain
