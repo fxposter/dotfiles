@@ -3,5 +3,4 @@ export rvm_pretty_print_flag=1
 export rvm_project_rvmrc=1
 export rvm_auto_flag=0
 export rvm_auto_reload_flag=1
-
-rvm_ignore_dotfiles_flag="1"
+export rvm_ignore_dotfiles_flag=1

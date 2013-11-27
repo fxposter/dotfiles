@@ -1,11 +1,9 @@
-#export LANG=ru_RU.UTF-8
-#export LC_CTYPE=ru_RU.UTF-8
 export LANG=en_US.UTF-8
 export LC_CTYPE=en_US.UTF-8
 export GOPATH=$HOME/go
 export PATH=~/bin:/usr/local/bin:/usr/local/sbin:$PATH:/usr/local/share/npm/bin:$HOME/go/bin
 export EDITOR=lime
-#export JAVA_HOME=/Library/Java/JavaVirtualMachines/jdk1.7.0_40.jdk/Contents/Home
+export JAVA_HOME=/Library/Java/JavaVirtualMachines/jdk1.7.0_45.jdk/Contents/Home
 
 export HISTCONTROL=ignoredups:erasedups
 export HISTSIZE=5000
