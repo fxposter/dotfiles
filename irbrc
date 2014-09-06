@@ -1,15 +1,9 @@
-require 'rubygems'
+require 'irb/completion'
+
+IRB.conf[:SAVE_HISTORY] = 5000
 
 begin
   require 'ap'
-rescue LoadError
-end
-
-begin
-  require 'wirble'
-  Wirble::Colorize.colors.merge!(:symbol => :purple, :symbol_prefix => :red)
-  Wirble.init
-  Wirble.colorize
 rescue LoadError
 end
 
