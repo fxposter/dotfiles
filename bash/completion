@@ -6,8 +6,8 @@ if command -v brew &>/dev/null; then
     source $BREW_PREFIX/etc/bash_completion
   fi
 
-  if [ -f $BREW_PREFIX/etc/autojump.bash ]; then
-    source $BREW_PREFIX/etc/autojump.bash
+  if [ -f $BREW_PREFIX/etc/profile.d/autojump.sh ]; then
+    source $BREW_PREFIX/etc/profile.d/autojump.sh
   fi
 
   if [ -f $BREW_PREFIX/opt/chruby/share/chruby/chruby.sh ]; then
