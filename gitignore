@@ -1,5 +1,7 @@
 .idea
 *.sublime-project
 *.sublime-workspace
+.sublime-settings
 .tags
 .tags_sorted_by_file
+.iml

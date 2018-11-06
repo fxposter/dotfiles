@@ -19,7 +19,8 @@
 [difftool "Kaleidoscope"]
 	cmd = ksdiff --partial-changeset --relative-path \"$MERGED\" -- \"$LOCAL\" \"$REMOTE\"
 [diff]
-	tool = Kaleidoscope
+	tool = sourcetree
+	compactionHeuristic = true
 [difftool]
 	prompt = false
 [mergetool "Kaleidoscope"]
@@ -37,3 +38,8 @@
 	trustExitCode = true
 [credential]
 	helper = osxkeychain
+[filter "lfs"]
+	required = true
+	clean = git-lfs clean -- %f
+	smudge = git-lfs smudge -- %f
+	process = git-lfs filter-process
