@@ -2,8 +2,10 @@
 if command -v brew &>/dev/null; then
   BREW_PREFIX=`brew --prefix`
 
-  if [ -f $BREW_PREFIX/etc/bash_completion ]; then
-    source $BREW_PREFIX/etc/bash_completion
+  export BASH_COMPLETION_COMPAT_DIR="$BREW_PREFIX/etc/bash_completion.d"
+
+  if [ -f $BREW_PREFIX/etc/profile.d/bash_completion.sh ]; then
+    source $BREW_PREFIX/etc/profile.d/bash_completion.sh
   fi
 
   if [ -f $BREW_PREFIX/etc/profile.d/autojump.sh ]; then
@@ -24,10 +26,12 @@ function _git_complete_aliases {
   # Shift current word index, because we have inserted something
   # in the beginning of command
   (( COMP_CWORD+=${#cmd[@]}-1 ))
+  COMP_LINE=${COMP_WORDS[@]}
+  COMP_POINT=${#COMP_LINE}
   _git
 }
 
-for cmd in 'ga gb gc gcb gd gci gca gl glr gm gmt gp gull gush gcam gg'; do
+for cmd in ga gb gc gcb gd gci gca gl gm gmt gull gush gcam gg; do
   complete -o bashdefault -o default -o nospace -F _git_complete_aliases $cmd 2>/dev/null \
     || complete -o default -o nospace -F _git_complete_aliases $cmd 2>/dev/null
 done
