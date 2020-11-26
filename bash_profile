@@ -10,8 +10,8 @@ export HISTSIZE=5000
 shopt -s histappend
 
 source "$HOME/.bash/ruby"
-source "$HOME/.bash/completion"
 source "$HOME/.bash/git"
+source "$HOME/.bash/completion"
 source "$HOME/.bash/aliases"
 source "$HOME/.bash/prompt"
 source "$HOME/.bash/colors"
@@ -25,3 +25,5 @@ export PATH="/usr/local/heroku/bin:$PATH"
 # source "$HOME/.iterm2_shell_integration.bash"
 
 [[ -f "$HOME/.cargo/env" ]] && source "$HOME/.cargo/env"
+
+export PATH="$HOME/.cargo/bin:$PATH"
