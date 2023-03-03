@@ -5,7 +5,7 @@ desc "Install the dot files into user's home directory"
 task :install do
   replace_all = false
   Dir[*file_selectors].each do |file|
-    next if %w[Rakefile README.md LICENSE linux macosx windows].include? file
+    next if %w[Rakefile README.md LICENSE linux macosx macosx/iterm windows].include? file
 
     target_file = target_path(file)
     if File.exist?(File.join(ENV['HOME'], target_file)) || File.symlink?(File.join(ENV['HOME'], target_file))

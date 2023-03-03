@@ -28,7 +28,7 @@ function _git_complete_aliases {
   (( COMP_CWORD+=${#cmd[@]}-1 ))
   COMP_LINE=${COMP_WORDS[@]}
   COMP_POINT=${#COMP_LINE}
-  _git
+  __git_wrap__git_main
 }
 
 for cmd in ga gb gc gcb gd gci gca gl gm gmt gull gush gcam gg; do

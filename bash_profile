@@ -3,7 +3,7 @@ export LC_CTYPE=en_US.UTF-8
 export GOPATH=$HOME/go
 export PATH=$HOME/bin:/usr/local/bin:/usr/local/sbin:$PATH:$HOME/go/bin:/usr/X11/bin:/usr/local/share/dotnet
 export EDITOR="lime -w"
-export JAVA_HOME=/Library/Java/Home
+# export JAVA_HOME=/Library/Java/Home
 export ANDROID_HOME=/usr/local/opt/android-sdk
 export HISTCONTROL=ignoredups:erasedups
 export HISTSIZE=5000
@@ -27,3 +27,4 @@ export PATH="/usr/local/heroku/bin:$PATH"
 [[ -f "$HOME/.cargo/env" ]] && source "$HOME/.cargo/env"
 
 export PATH="$HOME/.cargo/bin:$PATH"
+export OBJC_DISABLE_INITIALIZE_FORK_SAFETY=YES
